@@ -16,22 +16,31 @@ body {
     padding: 50px 0;
     margin-right: 25px;
     margin-top: 20px;
-    background-color: transparent !important; 
+    background-color: transparent !important;
 }
 
 .navbar.navbar-expand-lg.navbar-dark {
     background-color: transparent !important;
     box-shadow: none;
+    colro: white;
 }
+
+.navbar-scrolled .nav-link {
+  color: #000000 !important; /* Warna teks navbar saat digulir */
+}
+
 .navbar-brand{
     font-weight: bold;
     font-size: 1.5em;
     text-transform: uppercase;
-    color: black !important;
+    color: white !important;
     margin-right: auto;
     margin-left: 20px;
 }
 
+.navbar-scrolled .navbar-brand {
+  color: #000000 !important; /* Warna teks navbar saat digulir */
+}
 .nav-item{
     font-weight: 600;
     text-transform: uppercase;
@@ -39,41 +48,14 @@ body {
 }
 
 .nav-link{
-    color: black !important;
+    color: white !important;
     letter-spacing: 2px;
     font-size: 1em;
     font-weight: 500;
     font-size: 1em;
    
 } 
-/* main image*/
- .main{
-    background-image: url('https://imgur.com/fN11jSZ.png');
-     height: 100vh; 
-    width: 100%;
-    background-size: cover;
-    background-position: center; 
-    background-attachment: fixed;
-    padding: 280px 0 220px; 
-}
 
-
-.main h2{
-    font-size: 2.25em;
-    color: black !important;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding-left: 33px;
-}
-
-.main p{
-    margin-top: 18px;
-    padding: 0;
-    font-size: 16px;
-    color: white;
-    padding-bottom: 25px;
-    padding-left: 33px;
-} 
  
 /* page event */
 @media screen and (min-width: 568px) {
@@ -296,3 +278,52 @@ form{
     font-style: italic;
     color: black;
   }
+
+/* amel */
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('Asset/bg homepage.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  color: black;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero-text p span {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    padding: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+}
